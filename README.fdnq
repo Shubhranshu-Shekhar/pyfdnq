@@ -1,0 +1,24 @@
+PURPOSE
+   computes the q- fractal dimension,
+   for arbitrary (n-d) input dataset
+
+DEMO/TEST
+	make tests -- To run the tests
+   	make OR make run -- for a demo, or
+   	fdnq/fdnq.py -q 2 --input data/diagonal.inp
+   to compute the correlation (q=2) fractal dimension for a set of points
+   along a line.
+
+USAGE
+fdnq.py [-h] [-r R] [-R R] [-f F] [-q Q] [-v] [--hist]
+               [--input INPUT]
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -r R		Minimum radius for box counting
+  -R R		Maximum radius for box counting
+  -f F		Factor to increase radius by
+  -q Q		Dq fractal dimesnion. q=0, 2
+  -v		Verbose level
+  --hist	If the d-th dimension represents histogram counts
+  --input INPUT	d-dimesnional points stored 1 point per line
